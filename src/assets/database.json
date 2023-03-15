@@ -1,0 +1,527 @@
+[
+  {
+    "id": 1,
+    "name": "Dolch",
+    "price": 3
+  },
+  {
+    "id": 2,
+    "name": "Doppelaxt",
+    "price": 18
+  },
+  {
+    "id": 3,
+    "name": "Kampfstab",
+    "price": 4
+  },
+  {
+    "id": 4,
+    "name": "Kettensichel",
+    "price": 12
+  },
+  {
+    "id": 5,
+    "name": "Knüppel",
+    "price": 1
+  },
+  {
+    "id": 6,
+    "name": "Kriegsbeil",
+    "price": 8
+  },
+  {
+    "id": 7,
+    "name": "Kurzschwert",
+    "price": 8
+  },
+  {
+    "id": 8,
+    "name": "Schlagring",
+    "price": 3
+  },
+  {
+    "id": 9,
+    "name": "Schwert",
+    "price": 9
+  },
+  {
+    "id": 10,
+    "name": "Stoßspeer",
+    "price": 11
+  },
+  {
+    "id": 11,
+    "name": "Streitaxt",
+    "price": 16
+  },
+  {
+    "id": 12,
+    "name": "Streihammer",
+    "price": 8
+  },
+  {
+    "id": 13,
+    "name": "Streitkolben",
+    "price": 8
+  },
+  {
+    "id": 14,
+    "name": "Säbel",
+    "price": 9
+  },
+  {
+    "id": 15,
+    "name": "Wurfhammer",
+    "price": 5
+  },
+  {
+    "id": 16,
+    "name": "Wurfspeer",
+    "price": 7
+  },
+  {
+    "id": 17,
+    "name": "Zweihänder",
+    "price": 20
+  },
+  {
+    "id": 18,
+    "name": "Kurzbogen",
+    "price": 8
+  },
+  {
+    "id": 19,
+    "name": "Langbogen",
+    "price": 13
+  },
+  {
+    "id": 20,
+    "name": "Tuchrüstung",
+    "price": 6
+  },
+  {
+    "id": 21,
+    "name": "Lederrüstung",
+    "price": 9
+  },
+  {
+    "id": 22,
+    "name": "Kettenrüstung",
+    "price": 15
+  },
+  {
+    "id": 23,
+    "name": "Plattenrüstung",
+    "price": 25
+  },
+  {
+    "id": 24,
+    "name": "Bucklerschild",
+    "price": 4
+  },
+  {
+    "id": 25,
+    "name": "Lederschild",
+    "price": 3
+  },
+  {
+    "id": 26,
+    "name": "Großschild",
+    "price": 7
+  },
+  {
+    "id": 27,
+    "name": "Heilerbesteck",
+    "price": 9
+  },
+  {
+    "id": 28,
+    "name": "Pergament",
+    "price": 0.1
+  },
+  {
+    "id": 29,
+    "name": "Schreibuntensilien",
+    "price": 1
+  },
+  {
+    "id": 30,
+    "name": "Tagebuch",
+    "price": 5
+  },
+  {
+    "id": 31,
+    "name": "Brecheisen",
+    "price": 2
+  },
+  {
+    "id": 32,
+    "name": "Dietriche",
+    "price": 15
+  },
+  {
+    "id": 33,
+    "name": "Kletterhaken (10 Stück)",
+    "price": 0.5
+  },
+  {
+    "id": 34,
+    "name": "Wurfhaken",
+    "price": 1
+  },
+  {
+    "id": 35,
+    "name": "Schmiedeausstattung",
+    "price": 30
+  },
+  {
+    "id": 36,
+    "name": "Schneiderwerkzeug",
+    "price": 10
+  },
+  {
+    "id": 37,
+    "name": "Schreinerwerkzeug",
+    "price": 10
+  },
+  {
+    "id": 38,
+    "name": "Vorschlaghammer",
+    "price": 2
+  },
+  {
+    "id": 39,
+    "name": "Esel",
+    "price": 15
+  },
+  {
+    "id": 40,
+    "name": "Pferd",
+    "price": 50
+  },
+  {
+    "id": 41,
+    "name": "Hund",
+    "price": 5
+  },
+  {
+    "id": 42,
+    "name": "Prachtgewand",
+    "price": 20
+  },
+  {
+    "id": 43,
+    "name": "Straßenkleidung",
+    "price": 1
+  },
+  {
+    "id": 44,
+    "name": "Wildniskleidung",
+    "price": 3
+  },
+  {
+    "id": 45,
+    "name": "Ausdauertrunk",
+    "price": 5
+  },
+  {
+    "id": 46,
+    "name": "leichtes Gegengift",
+    "price": 5
+  },
+  {
+    "id": 47,
+    "name": "kleiner Heiltrank",
+    "price": 5
+  },
+  {
+    "id": 48,
+    "name": "Starker Heiltrank",
+    "price": 10
+  },
+  {
+    "id": 49,
+    "name": "Stabilisierungtrank",
+    "price": 20
+  },
+  {
+    "id": 50,
+    "name": "Beruhigendes Kraut",
+    "price": 2
+  },
+  {
+    "id": 51,
+    "name": "Heilkraut",
+    "price": 0.5
+  },
+  {
+    "id": 52,
+    "name": "Stabiliserendes Kraut",
+    "price": 5
+  },
+  {
+    "id": 53,
+    "name": "Stärkungskraut",
+    "price": 0.25
+  },
+  {
+    "id": 54,
+    "name": "Beil",
+    "price": 4
+  },
+  {
+    "id": 55,
+    "name": "Decke",
+    "price": 0.1
+  },
+  {
+    "id": 56,
+    "name": "Essgeschirr",
+    "price": 0.2
+  },
+  {
+    "id": 57,
+    "name": "Fackel",
+    "price": 0.01
+  },
+  {
+    "id": 58,
+    "name": "Feuerstein, Stahl & Zunder",
+    "price": 0.2
+  },
+  {
+    "id": 59,
+    "name": "Kochgeschirr",
+    "price": 0.5
+  },
+  {
+    "id": 60,
+    "name": "Laterne",
+    "price": 0.5
+  },
+  {
+    "id": 61,
+    "name": "Marschration",
+    "price": 0.1
+  },
+  {
+    "id": 62,
+    "name": "Rucksack",
+    "price": 1
+  },
+  {
+    "id": 63,
+    "name": "Seil",
+    "price": 2
+  },
+  {
+    "id": 64,
+    "name": "Spaten",
+    "price": 1
+  },
+  {
+    "id": 65,
+    "name": "Wasserschlauch",
+    "price": 0.1
+  },
+  {
+    "id": 66,
+    "name": "Zelt",
+    "price": 1
+  },
+  {
+    "id": 67,
+    "name": "Getränk, einfach",
+    "price": 0.01
+  },
+  {
+    "id": 68,
+    "name": "Getränk, edel",
+    "price": 0.05
+  },
+  {
+    "id": 69,
+    "name": "Heilung",
+    "price": 10
+  },
+  {
+    "id": 70,
+    "name": "Mahlzeit, einfach",
+    "price": 0.03
+  },
+  {
+    "id": 71,
+    "name": "Mahlzeit, warm",
+    "price": 0.05
+  },
+  {
+    "id": 72,
+    "name": "Asteria Perle",
+    "price": 5
+  },
+  {
+    "id": 73,
+    "name": "Cewri Haar",
+    "price": 15
+  },
+  {
+    "id": 74,
+    "name": "Gläsernes Eis",
+    "price": 24
+  },
+  {
+    "id": 75,
+    "name": "Firnholz",
+    "price": 50
+  },
+  {
+    "id": 76,
+    "name": "Jadeeisen",
+    "price": 30
+  },
+  {
+    "id": 77,
+    "name": "Band der Leichtigkeit",
+    "price": 0.4
+  },
+  {
+    "id": 78,
+    "name": "Blendstaub",
+    "price": 0.2
+  },
+  {
+    "id": 79,
+    "name": "Friedenskerze",
+    "price": 2
+  },
+  {
+    "id": 80,
+    "name": "Gedankenschutzamulett",
+    "price": 1
+  },
+  {
+    "id": 81,
+    "name": "Glücksbringer",
+    "price": 0.2
+  },
+  {
+    "id": 82,
+    "name": "Bänder der Zierde",
+    "price": 6
+  },
+  {
+    "id": 83,
+    "name": "Beruhigende Tierflöte",
+    "price": 15
+  },
+  {
+    "id": 84,
+    "name": "Lichtkugel",
+    "price": 3
+  },
+  {
+    "id": 85,
+    "name": "Magische Dietriche",
+    "price": 6
+  },
+  {
+    "id": 86,
+    "name": "Telekinsestaub",
+    "price": 15
+  },
+  {
+    "id": 87,
+    "name": "Absorbierender Spiegel",
+    "price": 25
+  },
+  {
+    "id": 88,
+    "name": "Leuchtender Ring",
+    "price": 25
+  },
+  {
+    "id": 89,
+    "name": "Reflektierender Spiegel",
+    "price": 25
+  },
+  {
+    "id": 90,
+    "name": "Schutzkette",
+    "price": 25
+  },
+  {
+    "id": 91,
+    "name": "Amulett der Vitalität",
+    "price": 15
+  },
+  {
+    "id": 92,
+    "name": "Armreif der Zähigkeit",
+    "price": 5
+  },
+  {
+    "id": 93,
+    "name": "Kleinegroße Tasche",
+    "price": 10
+  },
+  {
+    "id": 94,
+    "name": "Kräuterbeutel",
+    "price": 10
+  },
+  {
+    "id": 95,
+    "name": "Rucksack des Verwandlers",
+    "price": 10
+  },
+  {
+    "id": 96,
+    "name": "Schutzamulette",
+    "price": 30
+  },
+  {
+    "id": 97,
+    "name": "Einsparer",
+    "price": 15
+  },
+  {
+    "id": 98,
+    "name": "Unterstützer",
+    "price": 15
+  },
+  {
+    "id": 99,
+    "name": "Kritischer Schadensverstärker",
+    "price": 10
+  },
+  {
+    "id": 100,
+    "name": "Zuverlässigert Schadensverstärker",
+    "price": 10
+  },
+  {
+    "id": 101,
+    "name": "Personalisierung",
+    "price": 15
+  },
+  {
+    "id": 102,
+    "name": "Schriftrolle Grad 0",
+    "price": 0.1
+  },
+  {
+    "id": 103,
+    "name": "Schriftrolle Grad 1",
+    "price": 0.2
+  },
+  {
+    "id": 104,
+    "name": "Schriftrolle Grad 2",
+    "price": 0.5
+  },
+  {
+    "id": 105,
+    "name": "Schriftrolle Grad 3",
+    "price": 2
+  }
+]
