@@ -2,17 +2,17 @@
     <div class="main">
         <div class="input-container">
             <div class="input-item"> 
-                <div class="label">Gegenstände</div>
+                <div class="label">Max Items</div>
                 <input type="number" id="count" v-model="maxItems"> 
             </div> 
             <div class="input-item">
-                <div class="label">Lunarwert </div>
+                <div class="label">Max Worth </div>
                 <input type="number" id="amount" v-model="amount">
             </div>
             <button @click="onLoot">Loot!</button>
         </div>
         <div v-if="outputList.length != 0" class="loot-list">
-            <div class="luck">Glück: {{ luckPercentage }}%</div>
+            <div class="luck">Luck: {{ luckPercentage }}%</div>
             <div class="loot-list-item" v-for="(item, index) in outputList" :key="index">
                 <div>{{ item.count }} x </div>
                 <div>{{ item.name }} </div>
