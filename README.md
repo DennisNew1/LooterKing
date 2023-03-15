@@ -1,10 +1,9 @@
-# looterking
+# Looterking
 
-This template should help get you started developing with Vue 3 in Vite.
+Generic small webapp for generating random loot for pen and paper based on worth of items. This app was created for [Splittermond](https://www.splittermond.de/) a german pen and paper, which means the items are right now based on that rules. With replacing these you will be able to use it for any game you like. 
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+It is using vue.js and vite. Feel free to use it for yourself. 
 
 ## Customize configuration
 
