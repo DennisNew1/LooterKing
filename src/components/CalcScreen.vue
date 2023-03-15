@@ -102,7 +102,7 @@ export default {
 
     *{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 24px;        
+        font-size: 24px;    
     }
 
     input {
@@ -154,7 +154,7 @@ export default {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: top;
+        justify-content: flex-start;
         flex-direction: column;
         gap: 50px;
 
@@ -185,5 +185,33 @@ export default {
         display: flex;
         flex-direction: row;
         gap: 15px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .main {
+            padding: 10px;
+        }
+
+        .input-container {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .input-item {
+            width: 100%;
+        }
+
+        input {
+            width: 60%;
+        }
+
+        .label {
+            width: 40%;
+        }
+
+        button {
+            margin: 0;
+            width: 100%;
+        }
     }
 </style>

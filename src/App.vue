@@ -13,5 +13,7 @@ import CalcScreen from './components/CalcScreen.vue'
 </template>
 
 <style>
-
+html {
+  width:100%;
+}
 </style>
