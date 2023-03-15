@@ -31,14 +31,10 @@ export default {
             amount: 2,
             outputList: [],
             outputAmount: 0,
-            maxItems: 3,           
+            maxItems: 3,   
+            luckPercentage: 0,   
         }
     },
-    computed: {
-        luckPercentage() {
-            return this.round(this.outputAmount / this.amount * 100);
-        }
-    },  
     mounted() {
         console.log("im here");
         console.log(this.items);
@@ -90,6 +86,7 @@ export default {
         
             this.outputList = lootList;
             this.outputAmount = lootAmount
+            this.luckPercentage = this.round(this.outputAmount / this.amount * 100);
             console.log(this.outputList);
             
         }, 
