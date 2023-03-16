@@ -97,7 +97,7 @@ export default {
 </script>
 <style lang="css" scoped>
     .container {
-        gap: 10px;
+        gap: 20px;
     }
 
     .gallery-options {

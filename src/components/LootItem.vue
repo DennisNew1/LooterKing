@@ -36,15 +36,15 @@ export default {
 </script>
 <style lang="css" scoped>
     .container {
-        border: 1px solid #adabab;
         padding: 10px;
         gap: 20px;
-        background-color: #bddcfc;
+        background-color: #e6ebf0;
     }
 
     input {
         height: 20px;
         font-size: 20px;
+        background-color: white;
     }
 
     .label {

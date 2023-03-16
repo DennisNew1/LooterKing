@@ -85,6 +85,7 @@ export default {
         cursor: pointer;
         text-align: center;
         transition: background 250ms ease-in-out, transform 150ms ease;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         margin-left: 15px;
