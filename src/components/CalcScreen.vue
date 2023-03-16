@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="container">
         <div class="input-container">
             <div class="input-item"> 
                 <div class="label">Max Items</div>
@@ -98,68 +98,7 @@ export default {
     
 }
 </script>
-<style lang="css">
-
-    *{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 24px;    
-    }
-
-    input {
-        background-color: #e6ebf0;
-        border: none;
-        text-decoration: none;
-        color: black;
-        padding: 15px;
-        cursor: pointer;
-        box-sizing: border-box;
-
-        height: 50px;
-    }
-
-    /* Buttons styles start */
-    button {
-        display: block;
-        border: none;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 0;
-        text-decoration: none;
-        background: #e6ebf0;
-        color: black;
-        line-height: 1;
-        cursor: pointer;
-        text-align: center;
-        transition: background 250ms ease-in-out, transform 150ms ease;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        margin-left: 15px;
-        height: 50px;
-    }
-
-    button:hover,
-    button:focus {
-        background: #0053ba;
-    }
-
-    button:focus {
-        outline: 1px solid #fff;
-        outline-offset: -4px;
-    }
-
-    .main {
-        box-sizing: border-box;
-        padding: 20px;
-        height: 90vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 50px;
-
-    }
-
+<style lang="css" scoped>    
     .input-container {
         height: auto;
         width: 100%;
