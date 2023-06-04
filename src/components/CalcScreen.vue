@@ -9,6 +9,13 @@
                 <div class="label">Max Worth </div>
                 <input type="number" id="amount" v-model="amount">
             </div>
+            <div class="input-item">
+                <div class="label">Category </div>
+                <select class="selection" v-model="selectedTag">
+                <option v-for="(item, index) in tagList" :key="index">{{item}}</option>
+            </select>
+
+            </div>
             <button @click="onLoot">Loot!</button>
         </div>
         <div v-if="outputList.length != 0" class="loot-list">
@@ -22,22 +29,25 @@
     </div>
 </template>
 <script>
-import db from "@/assets/database.json";
 
 export default {
     data() {
         return {
-            items: db,
             amount: 2,
             outputList: [],
             outputAmount: 0,
             maxItems: 3,   
             luckPercentage: 0,   
+            selectedTag: "Tag"
         }
     },
-    mounted() {
-        console.log("im here");
-        console.log(this.items);
+    computed: {
+        items() {
+            return this.$store.state.items;
+        },
+        tagList() {
+            return this.$store.state.tagList;
+        }
     },
     methods: {
         onLoot() {
@@ -53,7 +63,11 @@ export default {
                     let loot = this.items[Math.floor(Math.random()*this.items.length)];
                     console.log("found " + loot.name + " " + loot.price);
 
-                    if (loot.price <= maxAmount) {
+                    let isRightTag = false;
+                    if (loot.keywords.includes(this.selectedTag) || this.selectedTag === "Tag") {
+                        isRightTag = true;
+                    }
+                    if ((loot.price <= maxAmount) && isRightTag) {
                         lootAmount = this.round(lootAmount + loot.price);
 
                         let lootID = lootList.findIndex((a) =>a === loot);

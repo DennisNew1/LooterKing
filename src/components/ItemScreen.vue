@@ -2,6 +2,9 @@
     <div class="container">
         <div class="gallery-options">
             <input class="searchbar" placeholder="Try me!" v-model="searchString">
+            <select class="selection" v-model="selectedTag" >
+                <option v-for="(item, index) in tagList" :key="index" >{{item}}</option>
+            </select>
             <button class="btn btn-info" @click="onPickFile">Upload JSON</button>
             <input
                 type="file"
@@ -12,11 +15,12 @@
             <button @click="onDownloadJson">Export JSON</button> 
             <a id="downloadAnchorElem" style="display:none"></a>
         </div>
-        <div class="item-gallery">
-            <div v-for="(item, index) in filteredList" :key="index">
-                <LootItem @changeInput="onChangeInput" :item="item"/>
-            </div>
+        <div class="gallery-container" >
+            <div class="gallery-item" v-for="(item, index) in filteredList" :key="index">
+            <LootItem class="loot-item" @changeInput="onChangeInput" :item="item"/>
         </div>
+        </div>
+        
     </div>
 </template>
 <script>
@@ -24,7 +28,6 @@ import LootItem from "./LootItem.vue";
 
 export default {
     components: { LootItem },
-    props: ['db'],
     data() {
         return {
             testItem: {
@@ -35,6 +38,7 @@ export default {
             },
             itemList: [],
             searchString: "",
+            selectedTag: "Tag"
         }
     },
     mounted() {
@@ -42,13 +46,19 @@ export default {
     },
     computed: {
         filteredList() {
-            return this.searchList(this.searchString, this.itemList);
+            return this.searchList(this.searchString, this.itemList, this.selectedTag);
+        },
+        db() {
+            return this.$store.state.items;
+        },
+        tagList() {
+            return this.$store.state.tagList;
         }
     },
     methods: {
         onPickFile () {
             this.$refs.fileInput.click()
-},
+        },
         onFilePicked (event) {
             const files = event.target.files;
             let filename = files[0].name;
@@ -72,20 +82,24 @@ export default {
         onChangeInput(item) {
             const foundId = this.itemList.findIndex(e => e.id === item.id);
             this.itemList[foundId] = item;
-
-            this.$emit("changedItemList", this.itemList);
+            this.$store.commit('setItem', item);
         },
-        searchList(keyword, searchableList) {
+        searchList(keyword, searchableList, tag = "Tag") {
             // this is... temporary :D
-            console.log("searcching");
             if (keyword) {
                 let returnList = [];
                 searchableList.forEach((item) => {
                     let regex = new RegExp (keyword, "i" );
-                    if (item.name.search(regex) >= 0){
-                        returnList.push(item);
-                    }
                     
+                    if (tag !== "Tag") {
+                        if (item.name.search(regex) >= 0 && item.keywords.includes(tag)){
+                            returnList.push(item);
+                        }   
+                    } else {
+                        if (item.name.search(regex) >= 0){
+                            returnList.push(item);
+                        }
+                    }                   
                 });
                 return returnList;
             } else {
@@ -104,10 +118,27 @@ export default {
         display: flex;
     }
 
-    .item-gallery {
+    .gallery-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
-        
+        width: 100%;
+    }
+
+    @media screen and (max-width: 720px) {
+
+        .gallery-container {
+            flex-direction: column;
+            border: 1px black;
+        }
+
+        .gallery-item {
+            width: 100%;
+        }
+        .loot-item {
+            width: 100%;
+        }
+
     }
 </style>

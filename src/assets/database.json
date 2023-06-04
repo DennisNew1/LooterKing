@@ -3,25 +3,25 @@
     "id": 1,
     "name": "Dolch",
     "price": 3,
-    "keywords": []
+    "keywords": ["hunting", "general"]
   },
   {
     "id": 2,
     "name": "Doppelaxt",
     "price": 18,
-    "keywords": []
+    "keywords": ["armory", "enemy-loot"]
   },
   {
     "id": 3,
     "name": "Kampfstab",
     "price": 4,
-    "keywords": []
+    "keywords": ["armory"]
   },
   {
     "id": 4,
     "name": "Kettensichel",
     "price": 12,
-    "keywords": []
+    "keywords": ["armory", "enemy-loot"]
   },
   {
     "id": 5,

@@ -1,17 +1,21 @@
 <script setup>
+import { RouterView } from 'vue-router'
 import CalcScreen from './components/CalcScreen.vue'
 import ItemScreen from './components/ItemScreen.vue'
+import BurgerMenu from './components/BurgerMenu.vue';
 </script>
 
 <template>
   <header>
-    <button class="btn-switch" @click="onClickSwitch">Switch</button>
+    <!--button class="btn-switch" @click="onClickSwitch">Switch</button-->
   </header>
 
   <main>
     <div class="main">
-    <CalcScreen :db="itemList" v-if="this.showCalc"/>
-    <ItemScreen :db="itemList" @changedItemList="onChangedItemList" v-if="this.showItems"/>
+    <BurgerMenu></BurgerMenu>
+    <RouterView></RouterView>
+    <!--CalcScreen :items="itemList" :tagList="tagList" v-if="this.showCalc"/>
+    <ItemScreen :db="itemList" :tagList="tagList" @changedItemList="onChangedItemList" v-if="this.showItems"-->
     </div>
   </main>
 </template>
@@ -20,22 +24,38 @@ import ItemScreen from './components/ItemScreen.vue'
 import db from "@/assets/database.json";
 
 export default {
-  data() {
+    data() {
     return {
         showCalc: true,
         showItems: false, 
-        itemList: db
+        itemList: db,
     }
-  },
-  methods: {
+    },
+    methods: {
     onClickSwitch() {
-      this.showCalc = !this.showCalc;
-      this.showItems = !this.showItems;
+        this.showCalc = !this.showCalc;
+        this.showItems = !this.showItems;
     },
     onChangedItemList(newList) {
         this.itemList = newList;
     }
-  },
+    },
+    computed: {
+        tagList() {
+            var tags = new Set();
+            tags.add("Tag");
+            this.itemList.forEach (item => {
+                if (item.keywords.length > 0) {
+                    item.keywords.forEach(tag => tags.add(tag));
+                }
+            });
+            return tags;
+        }
+    },
+    created() {
+        this.$store.commit('setItems', db);
+        this.$store.commit('setTags', this.tagList);
+    },
 }
 </script>
 
@@ -45,7 +65,7 @@ export default {
     }
 
     .btn-switch {
-        position: absolute;
+        position: fixed;
     }
 
     .main {
@@ -108,5 +128,24 @@ export default {
         justify-content: flex-start;
         flex-direction: column;
         gap: 50px;
+    }
+
+    select {
+        border-radius: 0;
+        background: #e6ebf0;
+        border: none;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 15px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .btn-switch {
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            margin-left: 0;
+        }
+
     }
 </style>

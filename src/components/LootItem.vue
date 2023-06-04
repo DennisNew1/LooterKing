@@ -1,15 +1,15 @@
 <template>
     <div class="container">
         <div class="id"> # {{ item.id }}</div>
-        <div>
+        <div class="label-container">
             <div class="label">Name</div>
             <input @focusout="onChangeInput" class="name" v-model="item.name"> 
         </div>
-        <div>
+        <div class="label-container">
             <div class="label">Price</div>
             <input @focusout="onChangeInput" class="price" v-model="item.price">
         </div>
-        <div>
+        <div class="label-container">
             <div class="label">Keywords</div>
             <input @focusout="onChangeInput" class="keywords" v-model="item.keywords"> 
         </div>
@@ -45,6 +45,11 @@ export default {
         height: 20px;
         font-size: 20px;
         background-color: white;
+        width: 100%;
+    }
+
+    .label-container {
+        width: 100%;
     }
 
     .label {
