@@ -6,7 +6,7 @@ Generic small webapp for generating random loot for pen and paper based on worth
 It is using vue.js and vite. Feel free to use it for yourself. 
 
 ## Demo
-A demo can be found here (items are german, sorry!): [Click me!](https://www.gm.fh-koeln.de/~mi1933/)
+A demo can be found here (items are german, sorry!): [Click me!](https://www.gm.fh-koeln.de/~mi1933/looterking)
 
 ## Customize configuration
 
