@@ -86,25 +86,25 @@ export default {
         },
         searchList(keyword, searchableList, tag = "Tag") {
             // this is... temporary :D
-            if (keyword) {
-                let returnList = [];
-                searchableList.forEach((item) => {
+            if (!keyword && tag === "Tag") {
+                return searchableList;
+            }
+            let returnList = [];
+            searchableList.forEach((item) => {
+                if (keyword) {
                     let regex = new RegExp (keyword, "i" );
-                    
                     if (tag !== "Tag") {
                         if (item.name.search(regex) >= 0 && item.keywords.includes(tag)){
                             returnList.push(item);
                         }   
-                    } else {
-                        if (item.name.search(regex) >= 0){
-                            returnList.push(item);
-                        }
-                    }                   
-                });
-                return returnList;
-            } else {
-                return searchableList;
-            }
+                    } else if (item.name.search(regex) >= 0){
+                        returnList.push(item);
+                    }   
+                } else if (item.keywords.includes(tag)){
+                    returnList.push(item);
+                }             
+            });
+            return returnList;
         }
     },
 }

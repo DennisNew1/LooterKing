@@ -1,7 +1,5 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import CalcScreen from './components/CalcScreen.vue'
-import ItemScreen from './components/ItemScreen.vue'
 import BurgerMenu from './components/BurgerMenu.vue';
 </script>
 
@@ -12,8 +10,9 @@ import BurgerMenu from './components/BurgerMenu.vue';
 
   <main>
     <div class="main">
-    <BurgerMenu></BurgerMenu>
+    <BurgerMenu class="menu"></BurgerMenu>
     <RouterView></RouterView>
+    
     <!--CalcScreen :items="itemList" :tagList="tagList" v-if="this.showCalc"/>
     <ItemScreen :db="itemList" :tagList="tagList" @changedItemList="onChangedItemList" v-if="this.showItems"-->
     </div>
@@ -22,23 +21,15 @@ import BurgerMenu from './components/BurgerMenu.vue';
 
 <script>
 import db from "@/assets/database.json";
+import spells from "@/assets/spells.json";
 
 export default {
     data() {
-    return {
-        showCalc: true,
-        showItems: false, 
-        itemList: db,
-    }
-    },
-    methods: {
-    onClickSwitch() {
-        this.showCalc = !this.showCalc;
-        this.showItems = !this.showItems;
-    },
-    onChangedItemList(newList) {
-        this.itemList = newList;
-    }
+        return {
+            showCalc: true,
+            showItems: false, 
+            itemList: db
+        }
     },
     computed: {
         tagList() {
@@ -55,6 +46,7 @@ export default {
     created() {
         this.$store.commit('setItems', db);
         this.$store.commit('setTags', this.tagList);
+        this.$store.commit('setSpells', spells);
     },
 }
 </script>
@@ -64,15 +56,18 @@ export default {
         width:100%;
     }
 
-    .btn-switch {
-        position: fixed;
+    body {
+        margin: 0;
     }
 
     .main {
         box-sizing: border-box;
-        padding: 20px;
-        height: 90vh;
+        padding: 50px 20px 20px 20px;
         width: 100%;   
+    }
+
+    .menu {
+        position: fixed;
     }
 
     *{

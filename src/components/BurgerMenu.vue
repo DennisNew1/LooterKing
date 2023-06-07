@@ -8,9 +8,9 @@
             </label>
 
             <ul class="menu__box">
-            <li><RouterLink to="/loot" class="menu__item">Looter</RouterLink></li>
-            <li><RouterLink to="/items" class="menu__item">Items</RouterLink></li>
-            <li><RouterLink to="" class="menu__item">Spells</RouterLink></li>
+            <li><RouterLink to="/loot" @click="closeMenu" class="menu__item">Looter</RouterLink></li>
+            <li><RouterLink to="/items" @click="closeMenu" class="menu__item">Items</RouterLink></li>
+            <li><RouterLink to="/spells" @click="closeMenu" class="menu__item">Spells</RouterLink></li>
             </ul>
         </div>
     </div>
@@ -18,7 +18,11 @@
 <script>
 import { RouterLink } from 'vue-router';
 export default {
-
+    methods: {
+        closeMenu() {
+            document.querySelector("#menu__toggle").checked = false;
+        }
+    }
 }
 </script>
 <style>
@@ -68,6 +72,7 @@ export default {
 }
 .menu__box {
   display: block;
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   left: -100%;

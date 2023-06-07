@@ -4,7 +4,8 @@ export default createStore({
     state() {
         return {
             items: [],
-            tagList: []
+            tagList: [],
+            spellList: [],
         }
     },
     mutations: {
@@ -13,6 +14,9 @@ export default createStore({
         },
         setTags(state, payload) {
             state.tagList = payload;
+        },
+        setSpells(state, payload) {
+            state.spellList = payload;
         },
         setItem(state, payload) {
             let index = state.items.findIndex(el => el.id === payload.id);
