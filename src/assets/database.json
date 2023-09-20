@@ -2,526 +2,631 @@
   {
     "id": 1,
     "name": "Dolch",
-    "price": 3
+    "price": 3,
+    "keywords": ["hunting", "general"]
   },
   {
     "id": 2,
     "name": "Doppelaxt",
-    "price": 18
+    "price": 18,
+    "keywords": ["armory", "enemy-loot"]
   },
   {
     "id": 3,
     "name": "Kampfstab",
-    "price": 4
+    "price": 4,
+    "keywords": ["armory"]
   },
   {
     "id": 4,
     "name": "Kettensichel",
-    "price": 12
+    "price": 12,
+    "keywords": ["armory", "enemy-loot"]
   },
   {
     "id": 5,
     "name": "Knüppel",
-    "price": 1
+    "price": 1,
+    "keywords": ["armory"]
   },
   {
     "id": 6,
     "name": "Kriegsbeil",
-    "price": 8
+    "price": 8,
+    "keywords": ["armory"]
   },
   {
     "id": 7,
     "name": "Kurzschwert",
-    "price": 8
+    "price": 8,
+    "keywords": ["armory"]
   },
   {
     "id": 8,
     "name": "Schlagring",
-    "price": 3
+    "price": 3,
+    "keywords": ["armory"]
   },
   {
     "id": 9,
     "name": "Schwert",
-    "price": 9
+    "price": 9,
+    "keywords": ["armory"]
   },
   {
     "id": 10,
     "name": "Stoßspeer",
-    "price": 11
+    "price": 11,
+    "keywords": ["armory"]
   },
   {
     "id": 11,
     "name": "Streitaxt",
-    "price": 16
+    "price": 16,
+    "keywords": ["armory"]
   },
   {
     "id": 12,
     "name": "Streihammer",
-    "price": 8
+    "price": 8,
+    "keywords": ["armory"]
   },
   {
     "id": 13,
     "name": "Streitkolben",
-    "price": 8
+    "price": 8,
+    "keywords": ["armory"]
   },
   {
     "id": 14,
     "name": "Säbel",
-    "price": 9
+    "price": 9,
+    "keywords": ["armory"]
   },
   {
     "id": 15,
     "name": "Wurfhammer",
-    "price": 5
+    "price": 5,
+    "keywords": ["armory"]
   },
   {
     "id": 16,
     "name": "Wurfspeer",
-    "price": 7
+    "price": 7,
+    "keywords": ["armory"]
   },
   {
     "id": 17,
     "name": "Zweihänder",
-    "price": 20
+    "price": 20,
+    "keywords": ["armory"]
   },
   {
     "id": 18,
     "name": "Kurzbogen",
-    "price": 8
+    "price": 8,
+    "keywords": ["armory"]
   },
   {
     "id": 19,
     "name": "Langbogen",
-    "price": 13
+    "price": 13,
+    "keywords": ["armory"]
   },
   {
     "id": 20,
     "name": "Tuchrüstung",
-    "price": 6
+    "price": 6,
+    "keywords": ["armory"]
   },
   {
     "id": 21,
     "name": "Lederrüstung",
-    "price": 9
+    "price": 9,
+    "keywords": ["armory"]
   },
   {
     "id": 22,
     "name": "Kettenrüstung",
-    "price": 15
+    "price": 15,
+    "keywords": ["armory"]
   },
   {
     "id": 23,
     "name": "Plattenrüstung",
-    "price": 25
+    "price": 25,
+    "keywords": ["armory"]
   },
   {
     "id": 24,
     "name": "Bucklerschild",
-    "price": 4
+    "price": 4,
+    "keywords": ["armory"]
   },
   {
     "id": 25,
     "name": "Lederschild",
-    "price": 3
+    "price": 3,
+    "keywords": ["armory"]
   },
   {
     "id": 26,
     "name": "Großschild",
-    "price": 7
+    "price": 7,
+    "keywords": ["armory"]
   },
   {
     "id": 27,
     "name": "Heilerbesteck",
-    "price": 9
+    "price": 9,
+    "keywords": ["apothecary"]
   },
   {
     "id": 28,
     "name": "Pergament",
-    "price": 0.1
+    "price": 0.1,
+    "keywords": []
   },
   {
     "id": 29,
     "name": "Schreibuntensilien",
-    "price": 1
+    "price": 1,
+    "keywords": []
   },
   {
     "id": 30,
     "name": "Tagebuch",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 31,
     "name": "Brecheisen",
-    "price": 2
+    "price": 2,
+    "keywords": []
   },
   {
     "id": 32,
     "name": "Dietriche",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 33,
     "name": "Kletterhaken (10 Stück)",
-    "price": 0.5
+    "price": 0.5,
+    "keywords": []
   },
   {
     "id": 34,
     "name": "Wurfhaken",
-    "price": 1
+    "price": 1,
+    "keywords": []
   },
   {
     "id": 35,
     "name": "Schmiedeausstattung",
-    "price": 30
+    "price": 30,
+    "keywords": []
   },
   {
     "id": 36,
     "name": "Schneiderwerkzeug",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 37,
     "name": "Schreinerwerkzeug",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 38,
     "name": "Vorschlaghammer",
-    "price": 2
+    "price": 2,
+    "keywords": []
   },
   {
     "id": 39,
     "name": "Esel",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 40,
     "name": "Pferd",
-    "price": 50
+    "price": 50,
+    "keywords": []
   },
   {
     "id": 41,
     "name": "Hund",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 42,
     "name": "Prachtgewand",
-    "price": 20
+    "price": 20,
+    "keywords": []
   },
   {
     "id": 43,
     "name": "Straßenkleidung",
-    "price": 1
+    "price": 1,
+    "keywords": []
   },
   {
     "id": 44,
     "name": "Wildniskleidung",
-    "price": 3
+    "price": 3,
+    "keywords": []
   },
   {
     "id": 45,
     "name": "Ausdauertrunk",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 46,
     "name": "leichtes Gegengift",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 47,
     "name": "kleiner Heiltrank",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 48,
     "name": "Starker Heiltrank",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 49,
     "name": "Stabilisierungtrank",
-    "price": 20
+    "price": 20,
+    "keywords": []
   },
   {
     "id": 50,
     "name": "Beruhigendes Kraut",
-    "price": 2
+    "price": 2,
+    "keywords": []
   },
   {
     "id": 51,
     "name": "Heilkraut",
-    "price": 0.5
+    "price": 0.5,
+    "keywords": []
   },
   {
     "id": 52,
     "name": "Stabiliserendes Kraut",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 53,
     "name": "Stärkungskraut",
-    "price": 0.25
+    "price": 0.25,
+    "keywords": []
   },
   {
     "id": 54,
     "name": "Beil",
-    "price": 4
+    "price": 4,
+    "keywords": []
   },
   {
     "id": 55,
     "name": "Decke",
-    "price": 0.1
+    "price": 0.1,
+    "keywords": []
   },
   {
     "id": 56,
     "name": "Essgeschirr",
-    "price": 0.2
+    "price": 0.2,
+    "keywords": []
   },
   {
     "id": 57,
     "name": "Fackel",
-    "price": 0.01
+    "price": 0.01,
+    "keywords": []
   },
   {
     "id": 58,
     "name": "Feuerstein, Stahl & Zunder",
-    "price": 0.2
+    "price": 0.2,
+    "keywords": []
   },
   {
     "id": 59,
     "name": "Kochgeschirr",
-    "price": 0.5
+    "price": 0.5,
+    "keywords": []
   },
   {
     "id": 60,
     "name": "Laterne",
-    "price": 0.5
+    "price": 0.5,
+    "keywords": []
   },
   {
     "id": 61,
     "name": "Marschration",
-    "price": 0.1
+    "price": 0.1,
+    "keywords": []
   },
   {
     "id": 62,
     "name": "Rucksack",
-    "price": 1
+    "price": 1,
+    "keywords": []
   },
   {
     "id": 63,
     "name": "Seil",
-    "price": 2
+    "price": 2,
+    "keywords": []
   },
   {
     "id": 64,
     "name": "Spaten",
-    "price": 1
+    "price": 1,
+    "keywords": []
   },
   {
     "id": 65,
     "name": "Wasserschlauch",
-    "price": 0.1
+    "price": 0.1,
+    "keywords": []
   },
   {
     "id": 66,
     "name": "Zelt",
-    "price": 1
+    "price": 1,
+    "keywords": []
   },
   {
     "id": 67,
     "name": "Getränk, einfach",
-    "price": 0.01
+    "price": 0.01,
+    "keywords": []
   },
   {
     "id": 68,
     "name": "Getränk, edel",
-    "price": 0.05
+    "price": 0.05,
+    "keywords": []
   },
   {
     "id": 69,
     "name": "Heilung",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 70,
     "name": "Mahlzeit, einfach",
-    "price": 0.03
+    "price": 0.03,
+    "keywords": []
   },
   {
     "id": 71,
     "name": "Mahlzeit, warm",
-    "price": 0.05
+    "price": 0.05,
+    "keywords": []
   },
   {
     "id": 72,
     "name": "Asteria Perle",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 73,
     "name": "Cewri Haar",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 74,
     "name": "Gläsernes Eis",
-    "price": 24
+    "price": 24,
+    "keywords": []
   },
   {
     "id": 75,
     "name": "Firnholz",
-    "price": 50
+    "price": 50,
+    "keywords": []
   },
   {
     "id": 76,
     "name": "Jadeeisen",
-    "price": 30
+    "price": 30,
+    "keywords": []
   },
   {
     "id": 77,
     "name": "Band der Leichtigkeit",
-    "price": 0.4
+    "price": 0.4,
+    "keywords": []
   },
   {
     "id": 78,
     "name": "Blendstaub",
-    "price": 0.2
+    "price": 0.2,
+    "keywords": []
   },
   {
     "id": 79,
     "name": "Friedenskerze",
-    "price": 2
+    "price": 2,
+    "keywords": []
   },
   {
     "id": 80,
     "name": "Gedankenschutzamulett",
-    "price": 1
+    "price": 1,
+    "keywords": []
   },
   {
     "id": 81,
     "name": "Glücksbringer",
-    "price": 0.2
+    "price": 0.2,
+    "keywords": []
   },
   {
     "id": 82,
     "name": "Bänder der Zierde",
-    "price": 6
+    "price": 6,
+    "keywords": []
   },
   {
     "id": 83,
     "name": "Beruhigende Tierflöte",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 84,
     "name": "Lichtkugel",
-    "price": 3
+    "price": 3,
+    "keywords": []
   },
   {
     "id": 85,
     "name": "Magische Dietriche",
-    "price": 6
+    "price": 6,
+    "keywords": []
   },
   {
     "id": 86,
     "name": "Telekinsestaub",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 87,
     "name": "Absorbierender Spiegel",
-    "price": 25
+    "price": 25,
+    "keywords": []
   },
   {
     "id": 88,
     "name": "Leuchtender Ring",
-    "price": 25
+    "price": 25,
+    "keywords": []
   },
   {
     "id": 89,
     "name": "Reflektierender Spiegel",
-    "price": 25
+    "price": 25,
+    "keywords": []
   },
   {
     "id": 90,
     "name": "Schutzkette",
-    "price": 25
+    "price": 25,
+    "keywords": []
   },
   {
     "id": 91,
     "name": "Amulett der Vitalität",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 92,
     "name": "Armreif der Zähigkeit",
-    "price": 5
+    "price": 5,
+    "keywords": []
   },
   {
     "id": 93,
     "name": "Kleinegroße Tasche",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 94,
     "name": "Kräuterbeutel",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 95,
     "name": "Rucksack des Verwandlers",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 96,
     "name": "Schutzamulette",
-    "price": 30
+    "price": 30,
+    "keywords": []
   },
   {
     "id": 97,
     "name": "Einsparer",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 98,
     "name": "Unterstützer",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 99,
     "name": "Kritischer Schadensverstärker",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 100,
     "name": "Zuverlässigert Schadensverstärker",
-    "price": 10
+    "price": 10,
+    "keywords": []
   },
   {
     "id": 101,
     "name": "Personalisierung",
-    "price": 15
+    "price": 15,
+    "keywords": []
   },
   {
     "id": 102,
     "name": "Schriftrolle Grad 0",
-    "price": 0.1
+    "price": 0.1,
+    "keywords": []
   },
   {
     "id": 103,
     "name": "Schriftrolle Grad 1",
-    "price": 0.2
+    "price": 0.2,
+    "keywords": []
   },
   {
     "id": 104,
     "name": "Schriftrolle Grad 2",
-    "price": 0.5
+    "price": 0.5,
+    "keywords": []
   },
   {
     "id": 105,
     "name": "Schriftrolle Grad 3",
-    "price": 2
+    "price": 2,
+    "keywords": []
   }
 ]

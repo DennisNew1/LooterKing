@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="container">
         <div class="input-container">
             <div class="input-item"> 
                 <div class="label">Max Items</div>
@@ -8,6 +8,13 @@
             <div class="input-item">
                 <div class="label">Max Worth </div>
                 <input type="number" id="amount" v-model="amount">
+            </div>
+            <div class="input-item">
+                <div class="label">Category </div>
+                <select class="selection" v-model="selectedTag">
+                <option v-for="(item, index) in tagList" :key="index">{{item}}</option>
+            </select>
+
             </div>
             <button @click="onLoot">Loot!</button>
         </div>
@@ -22,22 +29,25 @@
     </div>
 </template>
 <script>
-import db from "@/assets/database.json";
 
 export default {
     data() {
         return {
-            items: db,
             amount: 2,
             outputList: [],
             outputAmount: 0,
             maxItems: 3,   
             luckPercentage: 0,   
+            selectedTag: "Tag"
         }
     },
-    mounted() {
-        console.log("im here");
-        console.log(this.items);
+    computed: {
+        items() {
+            return this.$store.state.items;
+        },
+        tagList() {
+            return this.$store.state.tagList;
+        }
     },
     methods: {
         onLoot() {
@@ -53,7 +63,11 @@ export default {
                     let loot = this.items[Math.floor(Math.random()*this.items.length)];
                     console.log("found " + loot.name + " " + loot.price);
 
-                    if (loot.price <= maxAmount) {
+                    let isRightTag = false;
+                    if (loot.keywords.includes(this.selectedTag) || this.selectedTag === "Tag") {
+                        isRightTag = true;
+                    }
+                    if ((loot.price <= maxAmount) && isRightTag) {
                         lootAmount = this.round(lootAmount + loot.price);
 
                         let lootID = lootList.findIndex((a) =>a === loot);
@@ -98,68 +112,7 @@ export default {
     
 }
 </script>
-<style lang="css">
-
-    *{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 24px;    
-    }
-
-    input {
-        background-color: #e6ebf0;
-        border: none;
-        text-decoration: none;
-        color: black;
-        padding: 15px;
-        cursor: pointer;
-        box-sizing: border-box;
-
-        height: 50px;
-    }
-
-    /* Buttons styles start */
-    button {
-        display: block;
-        border: none;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 0;
-        text-decoration: none;
-        background: #e6ebf0;
-        color: black;
-        line-height: 1;
-        cursor: pointer;
-        text-align: center;
-        transition: background 250ms ease-in-out, transform 150ms ease;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        margin-left: 15px;
-        height: 50px;
-    }
-
-    button:hover,
-    button:focus {
-        background: #0053ba;
-    }
-
-    button:focus {
-        outline: 1px solid #fff;
-        outline-offset: -4px;
-    }
-
-    .main {
-        box-sizing: border-box;
-        padding: 20px;
-        height: 90vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 50px;
-
-    }
-
+<style lang="css" scoped>    
     .input-container {
         height: auto;
         width: 100%;
