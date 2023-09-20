@@ -24,14 +24,16 @@ export default {
             id: Number,
             name: String,
             price: Number,
-            keywords: String            
+            keywords: String         
         }
     },
     methods: {
         onChangeInput(event) {
-            this.$emit('changeInput', this.item )
-        }
-    },
+            let tmpItem = JSON.parse(JSON.stringify(this.item));
+            tmpItem.keywords = tmpItem.keywords.split(/[ ,]+/);
+            this.$emit('changeInput', tmpItem);
+        },
+    }
 }
 </script>
 <style lang="css" scoped>
