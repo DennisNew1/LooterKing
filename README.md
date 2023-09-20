@@ -38,5 +38,6 @@ You can define a maximal count for items and for the maximal worth of all items 
 Imagine the whole thing as you are in the supermarket. The worth-value is what you have in your pocket. The algorithm will randomly put items into your cart, but only those worth equal or less to your worth-value. It will add the items and value "to the cart" and goes on finding items without exceeding the limit of cash you have in your pockets.
 
 ## Feature ideas
-- keywordlist: giving a filter option, to get only specific items for specific situations or places. Getting only alchemy ingredients when stealing from an alchemist for example.
+- keywordlist: giving a filter option, to get only specific items for specific situations or places. Getting only alchemy ingredients when stealing from an alchemist for example. => Done :)
 - dropChance:  Giving a dropChance for items.
+- encounterRandomizer: random characters and enemies you meet
