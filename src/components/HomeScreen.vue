@@ -3,7 +3,7 @@
         <h1>Where to Adventurer?</h1>
         <RouterLink to="/loot">-> Looten</RouterLink>
         <RouterLink to="/items">-> Edit Items</RouterLink>
-        <!--RouterLink to="/spells">Spells</RouterLink-->
+        <RouterLink to="/spells">->Spells</RouterLink>
     </div>
 </template>
 <script>
