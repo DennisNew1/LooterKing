@@ -1,11 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router'
+
+import { createRouter, createWebHashHistory } from 'vue-router'
 import CalcScreen from '../components/CalcScreen.vue'
 import ItemScreen from '../components/ItemScreen.vue'
 import HomeScreen from '../components/HomeScreen.vue'
 import SpellScreen from '../components/SpellScreen.vue'
+import PillButton from '../components/PillButton.vue'
 
 const router = createRouter({
-history: createWebHistory(import.meta.env.BASE_URL),
+history: createWebHashHistory(import.meta.env.BASE_URL),
 routes: [
     {
         path: '/',
@@ -31,6 +33,11 @@ routes: [
         name: 'Spells',
         component: SpellScreen
     },
+    {
+        path: '/test',
+        name: 'Test',
+        component: PillButton
+    }
     ]
 })
 
